@@ -260,7 +260,7 @@ snippet un "Underline" wi
 endsnippet
 
 snippet rm "Text" wi
-\rm{${1:${VISUAL}}}$0
+\mathrm{${1:${VISUAL}}}$0
 endsnippet
 
 snippet itm "Item" wi
@@ -541,16 +541,98 @@ snippet subpar* "Sub Paragraph*" wi
 \subparagraph*{$1${VISUAL}}
 endsnippet
 
-snippet frame "frame" 
+snippet frame "frame" w 
 \begin{frame}
   \frametitle{$1}
 \end{frame}$2
 endsnippet
 
-snippet itemize "itemzie" 
+snippet itemize "itemzie" w 
 \begin{itemize}
   \item $1
 \end{itemize}$2
+endsnippet
+
+snippet Alt "Alt" w
+\mathrm{Alt}
+endsnippet
+
+snippet vol "vol" w
+\mathrm{vol}
+endsnippet
+
+snippet <> "<>" w
+\langle $1, $2 \rangle$3
+endsnippet
+
+snippet aligned "aligned" w
+\begin{aligned}
+  $1
+\end{aligned}$2
+endsnippet
+
+snippet bs "boldsymbol" w
+\boldsymbol{$1}$2
+endsnippet
+
+snippet pmatrix "pmatrix" w
+\begin{pmatrix}
+  $1
+\end{pmatrix}$2
+endsnippet
+
+snippet cases "cases" w
+\begin{cases}
+  $1
+\end{cases}$2
+endsnippet
+
+snippet matrix "matrix" w
+\begin{matrix}
+  $1
+\end{matrix}$2
+endsnippet
+
+snippet curl "curl" w
+\mathrm{curl}$1
+endsnippet
+
+snippet div "div" w
+\mathrm{div}$1
+endsnippet
+
+snippet d "d" w
+\mathrm{d}$1
+endsnippet
+
+snippet Tr "Tr" w
+\mathrm{Tr}$1
+endsnippet
+
+snippet mc "\mathcal" w
+\mathcal{$1}$2
+endsnippet
+
+snippet matrix "matrix" w
+\begin{matrix}
+  $1
+\end{matrix}$2
+endsnippet
+
+snippet bb "mathbb" w
+\mathbb{$1}$2
+endsnippet
+
+snippet cal "mathcal" w
+\mathcal{$1}$2
+endsnippet
+
+snippet pl "partial" w
+\partial $1
+endsnippet
+
+snippet norm "norm" w
+\Vert $1 \Vert $2
 endsnippet
 
 # vim:ft=snippets:
